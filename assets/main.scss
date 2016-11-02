@@ -439,39 +439,22 @@ $secondary-color: #BDBDBE;
 
 body {
 	// font-family: 'Open Sans', sans-serif;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
-	margin-bottom: 4rem;
+  // font-family: "PT Sans", Helvetica, Arial, sans-serif;
+	// margin-bottom: 4rem;
+	min-height: 100%;
+
+// font-family: 'Source Sans Pro', sans-serif;
+// font-family: 'Work Sans', sans-serif;
+// font-family: 'Questrial', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 h1 {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  // letter-spacing: -6px;
+  // font-family: "PT Sans", Helvetica, Arial, sans-serif;
   // font-weight: 400;
 	// font-family: 'Montserrat', sans-serif;
 }
-
-.container {
-	padding: 0 2rem;
-	max-width: 1000px;
-	color: $main-color;
-  margin: 0 auto;
-}
-
-.main {
-	// text-align: center;
-}
-
-section {
-  margin-top: 2rem;
-
-  h2 {
-    font-size: 20pt;
-  }
-
-  h3 {
-    font-size: 16pt;
-  }
-}
-
 
 .header {
   margin-top: 40px;
@@ -505,13 +488,16 @@ section {
 
   .title, .title a {
     color: $main-color;
-  	font-weight: 700;
+  	font-weight: 600;
   	font-size: 26pt;
   	margin: 0;
+    letter-spacing: -3px;
     text-decoration: none;
   }
 
   .sub-title {
+    font-weight: 400;
+    // letter-spacing: 2px;
   	margin: 0;
   	color: $secondary-color;
   	font-size: 14pt;
@@ -523,11 +509,36 @@ section {
   border-radius: 1px;
   color: #fff;
   padding: 3rem;
-  background: #263238;
+  background: $main-color;
   font-size: 13pt;
 }
 
+.container {
+	padding: 0 2rem;
+	max-width: 1000px;
+	color: $main-color;
+  margin: 0 auto;
+}
+
 .portfolio {
+	// text-align: center;
+	h1 {
+    font-weight: 300;
+    font-size: 28pt;
+  }
+
+  section {
+    margin-top: 2rem;
+
+    h2 {
+      font-size: 20pt;
+    }
+
+    h3 {
+      font-size: 16pt;
+    }
+  }
+
   // background: #ECEFF1;
   margin-top: 2rem;
 
@@ -549,6 +560,8 @@ section {
       // height: 100%;
 
       h3 {
+        margin-top: 0;
+        padding-top: 0.75rem;
         font-size: 24pt;
         font-weight: 400;
         margin-bottom: 1.75rem;
@@ -586,7 +599,7 @@ section {
       float: left;
       width: 66.66%;
       // max-height: 400px;
-      max-height: 300px;
+      max-height: 320px;
       overflow: hidden;
 
       img {
@@ -595,11 +608,11 @@ section {
       }
 
       &.left {
-        padding-right: 2rem;
+        padding-right: 2.5rem;
       }
 
       &.right {
-        padding-left: 2rem;
+        padding-left: 2.5rem;
         text-align: right;
       }
     }
@@ -636,12 +649,12 @@ section {
 	list-style-type: square;
 }
 
-.btn {
+.btn, .main a {
   color: #fff;
   background: $main-color;
   text-decoration: none;
   // border: 2px solid $main-color;
-  padding: 0.4rem 1.5rem;
+  padding: 0.3rem 1.4rem;
   font-size: 11pt;
   border: 2px solid transparent;
 
@@ -654,6 +667,37 @@ section {
   }
 }
 
+.main a {
+  // float: right;
+  display: block;
+  background: #0ad;
+  width: 215px;
+  height: 215px;
+  font-size: 26pt;
+  font-weight: 500;
+  letter-spacing: -3px;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: table-cell;
+  vertical-align: bottom;
+  // font-variant: small-caps;
+
+  &:hover {
+    color: $main-color;
+    background: #fff;
+    border: 2px solid #0ad;
+  }
+}
+
+.footer {
+  width: 100%;
+  text-align: right;
+  color: $secondary-color;
+  margin-top: 3rem;
+  // font-size: 10pt;
+  margin-bottom: 1.5rem;
+}
 
 /* Utils */
 .float-right {
