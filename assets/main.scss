@@ -75,7 +75,7 @@ a {
     letter-spacing: -3px;
     text-decoration: none;
 
-    transition: all ease 0.25s;
+    transition: opacity ease 0.25s;
   }
 
   .title a:hover {
@@ -112,8 +112,6 @@ a {
   max-width: $max-width;
   margin: 0 auto;
   font-weight: 300;
-
-  transition: padding ease 0.5s;
 }
 
 .portfolio {
@@ -127,8 +125,8 @@ a {
 
   .section {
     content: "";
-    padding: 5.5rem 0;
-    margin: 3rem 0;
+    padding: 3rem 0;
+    margin: 1rem 0;
 
     // border-bottom: 1px solid $secondary-background;
 
@@ -359,6 +357,14 @@ a.s3 {
 @media (min-width: 576px) {
   .container {
     padding: 0 1.75rem;
+    transition: padding ease 0.5s;
+  }
+
+  .portfolio {
+    .section {
+      padding: 5rem 0;
+      margin: 2rem 0;
+    }
   }
 
   .main ul {
@@ -443,6 +449,13 @@ a.s3 {
 @media (min-width: 768px) {
   .container {
     padding: 0 2rem;
+  }
+
+  .portfolio {
+    .section {
+      padding: 5.5rem 0;
+      margin: 3rem 0;
+    }
   }
 
   .portfolio .section {
