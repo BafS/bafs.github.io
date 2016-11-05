@@ -8,4 +8,5 @@ Fullstack Web Developer with a soft spot for User Experience.<br> Quarkdev Co-fo
 
  - [Projects](projects){: .s1}
  - [Graphics](design){: .s2}
+ - [Pictures](pictures){: .s3}
 

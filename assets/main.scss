@@ -28,6 +28,10 @@ body {
   background: $main-background;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   color: $main-color;
 }
@@ -99,6 +103,7 @@ a {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  margin-bottom: 18px;
   // letter-spacing: 1px;
 }
 
@@ -273,20 +278,29 @@ a {
 }
 
 a.s1 {
-  background: #00b3d0;
+  background: #00b2ec;
 
   &:hover {
-    color: #00b3d0;
-    border-color: #00b3d0;
+    color: #00b2ec;
+    border-color: #00b2ec;
   }
 }
 
 a.s2 {
-  background: #00d0b3;
+  background: darken(#00b2ec, 25%);
 
   &:hover {
-    color: #00d0b3;
-    border-color: #00d0b3;
+    color: darken(#00b2ec, 25%);
+    border-color: darken(#00b2ec, 25%);
+  }
+}
+
+a.s3 {
+  background: desaturate(#00b2ec, 25%);
+
+  &:hover {
+    color: desaturate(#00b2ec, 25%);
+    border-color: desaturate(#00b2ec, 25%);
   }
 }
 
@@ -308,6 +322,23 @@ a.s2 {
   }
 }
 
+.main-gallery {
+	display: -ms-flexbox;
+	-ms-flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 0;
+
+  a {
+    width: 33.3%;
+    transition: .8s opacity;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
 /* Utils */
 .float-right {
   float: right;
@@ -325,10 +356,9 @@ a.s2 {
 }
 
 
-
 @media (min-width: 576px) {
   .container {
-    padding: 0 2rem;
+    padding: 0 1.75rem;
   }
 
   .main ul {
@@ -411,6 +441,10 @@ a.s2 {
 }
 
 @media (min-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+
   .portfolio .section {
     .description, .caption {
       padding-left: 2.5rem;
