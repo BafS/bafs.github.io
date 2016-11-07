@@ -94,17 +94,15 @@ a {
 
 .hero {
   color: $main-background;
-  border-radius: 1px;
   padding: 3rem 2.75rem;
   font-size: 13pt;
   line-height: 1.4;
-  // background: $main-color;
-  background: url(bg.jpg) no-repeat;
+  background: #223d50 url(bg.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  margin: 0;
   margin-bottom: 18px;
-  // letter-spacing: 1px;
 }
 
 .container {
@@ -240,36 +238,44 @@ a {
   }
 }
 
-.main ul {
-  list-style: none;
-  padding: 0;
-  background: $main-color;
+.main {
+  width: 100%;
+  margin-bottom: 18px;
+  clear: both;
+  display: table;
+  content: "";
 
-  li {
-    float: left;
-    width: 100%;
-    display: table;
-    margin-bottom: 16px;
+  ul {
+    list-style: none;
+    padding: 0;
+    background: $main-color;
 
-    a {
-      padding: 0;
-      padding-left: 3px;
-      margin: 0;
-      display: table-cell;
-      width: 144px;
-      height: 144px;
-      font-size: 28px;
-      font-weight: 400;
-      letter-spacing: -2px;
-      border-width: 3px;
-      text-transform: uppercase;
-      vertical-align: bottom;
-      text-align: left;
-      color: $main-background;
+    li {
+      float: left;
+      width: 100%;
+      display: table;
+      margin-bottom: 18px;
 
-      &:hover {
+      a {
+        padding: 0;
+        padding-left: 3px;
+        margin: 0;
+        display: table-cell;
+        width: 144px;
+        height: 144px;
+        font-size: 28px;
+        font-weight: 400;
+        letter-spacing: -2px;
         border-width: 3px;
-        background: $main-background;
+        text-transform: uppercase;
+        vertical-align: bottom;
+        text-align: left;
+        color: $main-background;
+
+        &:hover {
+          border-width: 3px;
+          background: $main-background;
+        }
       }
     }
   }
@@ -294,11 +300,11 @@ a.s2 {
 }
 
 a.s3 {
-  background: desaturate(#00b2ec, 25%);
+  background: desaturate(#00b2ec, 28%);
 
   &:hover {
-    color: desaturate(#00b2ec, 25%);
-    border-color: desaturate(#00b2ec, 25%);
+    color: desaturate(#00b2ec, 28%);
+    border-color: desaturate(#00b2ec, 28%);
   }
 }
 

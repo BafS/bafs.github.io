@@ -10,7 +10,6 @@ images:
     - DSC1678.jpg
   - luff:
     - DSC9458.jpg
-    - 20151016-_DSC9393.jpg
     - 20151018-_DSC9845.jpg
     - 20151018-_DSC9858.jpg
 ---
