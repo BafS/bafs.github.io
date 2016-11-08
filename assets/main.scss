@@ -17,9 +17,6 @@ $max-width: 1020px;
 }
 
 body {
-  // font-family: 'Open Sans', sans-serif;
-  // font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  // margin-bottom: 4rem;
   min-height: 100%;
 
   //font-family: 'Roboto', sans-serif;
@@ -332,10 +329,12 @@ a.s3 {
 	display: flex;
 	flex-wrap: wrap;
 	font-size: 0;
+  height: auto;
 
   a {
-    width: 33.3%;
+    width: 50%;
     transition: .8s opacity;
+    padding: 2px;
 
     &:hover {
       opacity: 0.8;
@@ -450,6 +449,12 @@ a.s3 {
     float: left;
     width: 80%;
   }
+
+  .main-gallery {
+    a {
+      width: 33.33%;
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -481,6 +486,12 @@ a.s3 {
       a {
         width: 216px;
       }
+    }
+  }
+
+  .main-gallery {
+    a {
+      width: 25%;
     }
   }
 }
