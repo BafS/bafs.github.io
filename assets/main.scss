@@ -16,9 +16,18 @@ $max-width: 1020px;
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   min-height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 18px;
 
+  // font-family: 'Open Sans', sans-serif;
   //font-family: 'Roboto', sans-serif;
   font-family: 'Aileron', "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.3;
@@ -66,8 +75,8 @@ a {
 
   .title, .title a {
     color: $main-color;
-    font-weight: 600;
     font-size: 26pt;
+    font-weight: 600;
     margin: 0;
     letter-spacing: -3px;
     text-decoration: none;
@@ -82,9 +91,10 @@ a {
   .sub-title {
     color: $secondary-color;
     font-weight: 300;
-    //letter-spacing: 1px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
     margin: 0;
-    font-size: 16pt;
+    font-size: 15pt;
     padding-bottom: 0;
   }
 }
@@ -237,7 +247,6 @@ a {
 
 .main {
   width: 100%;
-  margin-bottom: 18px;
   clear: both;
   display: table;
   content: "";
@@ -306,11 +315,11 @@ a.s3 {
 }
 
 .footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
   text-align: right;
-  margin-top: 3rem;
   font-size: 13px;
-  margin-bottom: 0;
   background: $secondary-background;
 
   .container {
@@ -324,6 +333,7 @@ a.s3 {
 }
 
 .main-gallery {
+  // margin-bottom: 5rem;
 	display: -ms-flexbox;
 	-ms-flex-wrap: wrap;
 	display: flex;
