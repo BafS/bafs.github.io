@@ -5,7 +5,7 @@
 
 // Variables
 $main-color: #263238;
-$secondary-color: #BDBDBE;
+$secondary-color: #b0b1b3;
 $main-background: #fff;
 $secondary-background: #f8f8f8;
 $max-width: 1020px;
@@ -45,14 +45,14 @@ a {
   margin-bottom: 36px;
   text-align: left;
   clear: both;
-  border-top: 1px solid #ECEFF1;
+  // border-top: 1px solid #ECEFF1;
   border-bottom: 1px solid #ECEFF1;
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
 
   .links {
     float: right;
-    font-size: 10.5pt;
+    font-size: 11pt;
     list-style: none;
     margin: 0;
   }
@@ -73,8 +73,8 @@ a {
 
   .title, .title a {
     color: $main-color;
-    font-size: 26pt;
-    font-weight: 600;
+    font-size: 30pt;
+    font-weight: 200;
     margin: 0;
     letter-spacing: -3px;
     text-decoration: none;
@@ -88,26 +88,24 @@ a {
 
   .sub-title {
     color: $secondary-color;
-    font-weight: 300;
-    letter-spacing: 1px;
-    word-spacing: 2px;
+    font-weight: 500;
+    letter-spacing: 2.3px;
+    word-spacing: 3px;
     margin: 0;
-    font-size: 15pt;
+    font-size: 16pt;
     padding-bottom: 0;
   }
 }
 
 .hero {
-  color: $main-background;
-  padding: 3rem 2.75rem;
-  font-size: 13pt;
+  padding: 2rem 0;
+  font-size: 18pt;
   line-height: 1.4;
-  background: #223d50 url(bg.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 36px;
 }
 
 .container {
@@ -252,71 +250,75 @@ a {
 }
 
 .main {
-  width: 100%;
   clear: both;
-  display: table;
   content: "";
+  display: table;
+  width: 100%;
 
   ul {
     list-style: none;
-    padding: 0;
     background: $main-color;
+    padding: 0;
 
     li {
       float: left;
-      width: 100%;
       display: table;
       margin-bottom: 18px;
+      width: 100%;
 
       a {
         padding: 0;
         padding-left: 3px;
         margin: 0;
         display: table-cell;
-        width: 144px;
-        height: 144px;
+        width: 140px;
+        height: 140px;
         font-size: 28px;
         font-weight: 400;
         letter-spacing: -2px;
-        border-width: 3px;
         text-transform: uppercase;
         vertical-align: bottom;
         text-align: left;
-        color: $main-background;
+        border-width: 2px;
+        background: $main-background;
 
         &:hover {
-          border-width: 3px;
-          background: $main-background;
+          color: $main-background;
         }
       }
     }
   }
 }
 
+$linkBaseColor: #00b2ec;
+
 a.s1 {
-  background: #00b2ec;
+  color: $linkBaseColor;
+  border-color: $linkBaseColor;
 
   &:hover {
-    color: #00b2ec;
-    border-color: #00b2ec;
+    border-color: $linkBaseColor;
+    background: $linkBaseColor;
   }
 }
 
 a.s2 {
-  background: darken(#00b2ec, 25%);
+  color: darken($linkBaseColor, 25%);
+  border-color: darken($linkBaseColor, 25%);
 
   &:hover {
-    color: darken(#00b2ec, 25%);
-    border-color: darken(#00b2ec, 25%);
+    border-color: darken($linkBaseColor, 25%);
+    background: darken($linkBaseColor, 25%);
   }
 }
 
 a.s3 {
-  background: desaturate(#00b2ec, 28%);
+  color: desaturate($linkBaseColor, 28%);
+  border-color: desaturate($linkBaseColor, 28%);
 
   &:hover {
-    color: desaturate(#00b2ec, 28%);
-    border-color: desaturate(#00b2ec, 28%);
+    border-color: desaturate($linkBaseColor, 28%);
+    background: desaturate($linkBaseColor, 28%);
   }
 }
 
@@ -480,6 +482,10 @@ a.s3 {
     padding: 0 2rem;
   }
 
+  .hero {
+    font-size: 22pt;
+  }
+
   .portfolio {
     .section {
       padding: 5.5rem 0;
@@ -502,7 +508,8 @@ a.s3 {
   .main ul {
     li {
       a {
-        width: 216px;
+        font-size: 32px;
+        width: 210px;
       }
     }
   }
