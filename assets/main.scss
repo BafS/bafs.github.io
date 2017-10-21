@@ -63,11 +63,24 @@ a {
 
   .links a {
     margin: 0 6px;
-    text-decoration: none;
     color: darken($secondary-color, 8);
+    position: relative;
+    text-decoration: none;
 
-    &:hover {
-      text-decoration: underline;
+    &:before {
+      position: absolute;
+      content: '';
+      transition: transform .18s ease-in-out;
+      background: darken($secondary-color, 8);
+      bottom: 0;
+      left: 0;
+      transform: scaleX(0);
+      height: 1px;
+      width: 100%;
+    }
+
+    &:hover:before {
+      transform: scaleX(1);
     }
   }
 
@@ -382,7 +395,7 @@ a.s3 {
 @media (min-width: 576px) {
   .container {
     padding: 0 1.75rem;
-    transition: padding ease 0.5s;
+    transition: padding ease .5s;
   }
 
   .portfolio {
